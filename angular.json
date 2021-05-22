@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "runJS-app": {
+    "contacts-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/runJS-app",
+            "outputPath": "dist/contacts-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "runJS-app:build"
+            "browserTarget": "contacts-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "runJS-app:build:production"
+              "browserTarget": "contacts-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "runJS-app:build"
+            "browserTarget": "contacts-app:build"
           }
         },
         "test": {
@@ -114,15 +114,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "runJS-app:serve"
+            "devServerTarget": "contacts-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "runJS-app:serve:production"
+              "devServerTarget": "contacts-app:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "runJS-app"
+  "defaultProject": "contacts-app"
 }
